@@ -1,0 +1,14 @@
+scalar Date
+
+type Query {
+  ola: String!
+  horaAtual: String
+  dataAtual: Date
+  melhorUsuario: Usuario!
+  melhorProduto: Produto
+  numerosMegaSena: [Int]!
+  usuarios: [Usuario!]!
+  usuario(id: Int): Usuario
+  perfis: [Perfil!]!
+  perfil(id: Int): Perfil
+}
