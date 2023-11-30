@@ -1,4 +1,6 @@
 import { usuarios, perfis } from "../data/dados.js";
+import Produto from "./Produto.js";
+import Usuario from "./Usuario.js";
 
 export default {
   Query: {
@@ -51,5 +53,7 @@ export default {
     perfil(_, { id }) {
       return perfis.find((p) => p.id === id);
     }
-  }
+  }, 
+  ...Produto,
+  ...Usuario
 }

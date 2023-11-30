@@ -1,10 +1,13 @@
 import { ApolloServer } from "@apollo/server";
 import { startStandaloneServer } from "@apollo/server/standalone";
 import { loadFiles } from "@graphql-tools/load-files";
+import Query from "./resolvers/Query.js"
+
+
 
 const servidor = new ApolloServer({
   typeDefs: await loadFiles("./schema/*.graphql"),
-  resolvers: await loadFiles("./resolvers/*.js"),
+  resolvers: Query
 });
 
 const { url } = await startStandaloneServer(servidor);

@@ -1,7 +1,11 @@
+let id = 1;
+
+export const proximoId = () => id++;
+
 
 export const usuarios = [
     {
-        id: 1,
+        id: proximoId(),
         nome_completo: "Mauro Veloso",
         email: "mvjr98@gmail.com",
         salario: 3000.00,
@@ -10,7 +14,7 @@ export const usuarios = [
         status: "ATIVO"
     },
     {
-        id: 2,
+        id: proximoId(),
         nome_completo: "Lucas Silva",
         email: "ls@gmail.com",
         salario: 1500.00,
@@ -19,7 +23,7 @@ export const usuarios = [
         status: "INATIVO"
     },
     {
-        id: 3,
+        id: proximoId(),
         nome_completo: "Pedro Porro",
         email: "pp@gmail.com",
         salario: 1250.00,
@@ -28,7 +32,7 @@ export const usuarios = [
         status: "BLOQUEADO"
     },
     {
-        id: 4,
+        id: proximoId(),
         nome_completo: "Emerson Royal",
         email: "mer@gmail.com",
         salario: 1350.00,
