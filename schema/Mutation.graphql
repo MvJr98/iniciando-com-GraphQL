@@ -1,3 +1,4 @@
 type Mutation {
-    novoUsuario(nome: String, email: String, salario: Float): Usuario!
+    criarUsuario(nome: String, email: String, salario: Float): Usuario
+    excluirUsuario(id: Int): Usuario
 }

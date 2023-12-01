@@ -2,8 +2,11 @@ let id = 1;
 
 export const proximoId = () => id++;
 
+export const setUsuarios = (novosUsuarios) => {
+    usuarios = novosUsuarios
+}
 
-export const usuarios = [
+export let usuarios = [
     {
         id: proximoId(),
         nome_completo: "Mauro Veloso",
@@ -35,6 +38,15 @@ export const usuarios = [
         id: proximoId(),
         nome_completo: "Emerson Royal",
         email: "mer@gmail.com",
+        salario: 1350.00,
+        vip: true,
+        id_perfil: 101,
+        status: "ATIVO"
+    },
+    {
+        id: proximoId(),
+        nome_completo: "Cristiano Ronaldo",
+        email: "cr7@mail.com",
         salario: 1350.00,
         vip: true,
         id_perfil: 101,
